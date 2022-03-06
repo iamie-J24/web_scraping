@@ -1,6 +1,4 @@
 import scrapy
-# from beforward.items import BeforwardItem
-# from scrapy.loader import ItemLoader
 
 class SongsItem(scrapy.Spider):
     name = 'songs'
