@@ -1,0 +1,9 @@
+This project has been created on virtual environments
+
+1st Install scrapy library in your virtual envuronment.  'pip install scrapy'
+2nd create a project using a command 'scrapy startproject projectname', in my case, it was 'scrapy startproject songs'
+3rd navigate to your spiders folder and create your spider file where you put all the logic for your data scraping
+    -> for me I navigated to songs/songs/spiders/. here I manually created the songsSpider.py file
+4th using the CLI run the command 'scrapy crawl spydername -O customname.csv' to retrieve the data
+    -> in my case, I ran 'scrapy crawl songs -O songs.csv'. this command downloaded the songs list and their types and populated into songs.csv file
+    -> The name songs on 'scrapy crawl songs...' should be the same as you created in the songsSpider file, otherwise it won't work
